@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Just an image -->
+<nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/3849/3849409.png"
+          height="50"
+          alt="MDB Logo"
+          loading="lazy"
+        />
+      </a>
+    </div>
+  </nav>
+    <h1 id="userName"></h1>
+    <p id="results"></p>
+
+<!--     
+    <footer class="bg-light text-center text-lg-start">
+        Copyright -->
+        <!-- <div class="text-center p-4 mt-5" style="background-color: rgba(225, 225, 225, 0.2);">
+          © 2023
+          
+        </div> -->
+        <!-- Copyright -->
+      <!-- </footer> -->
+<script>
+    // document.getElementById("userName") = localStorage.getItem("user");
+
+fetch('http://api.aladhan.com/v1/calendar/2017/4?latitude=51.508515&longitude=-0.1254872&method=2http://api.aladhan.com/v1/calendar/2019?latitude=51.508515&longitude=-0.1254872&method=2')
+      .then(response => 
+        response.json() )
+      .then(json => {
+        console.log(json)
+        let timign = [0].data.timings.map
+        console.log(timign)
+        document.getElementById('resullts');
+        timign.forEach(timign => {
+          timign.innerHTML = `<h3>${data}</h3>`;
+          timign.appendChild();
+        });
+    })
+    .catch(error => console.error('Error:', error));
+
+</script>
+</body>
+</html>
